@@ -1,0 +1,327 @@
+<!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+
+User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
+
+User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+
+User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
+
+User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
+
+User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
+
+User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+
+User Story #8: I can see a nav element with a corresponding id="navbar".
+
+User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+
+User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+
+User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
+
+User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+
+User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
+
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+
+User Story #15: My Technical Documentation page should use at least one media query. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="Stylesheet">
+  <title>FCC Technical Documentation Page</title>
+</head>
+<body>
+  
+  <nav id="navbar">
+    <header>Deiter Ram's 10 Principles for Design</header>
+    <ul>
+      <li><a class="nav-link" href="#Design">Design</a></li>
+      <li>
+        <a class="nav-link" href="#design-the-design"
+          >Design is to design the design of a design.</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#Innovative">It's Innovative</a>
+      </li>
+      <li><a class="nav-link" href="#product-is-useful">Makes a Product Useful</a></li>
+      <li><a class="nav-link" href="#Aesthetic">Is Aesthetic</a></li>
+      <li>
+        <a class="nav-link" href="#understandable">Makes a Product Understandable.</a>
+      </li>
+      <li><a class="nav-link" href="#unobtrustive">Is Unobtrusive</a></li>
+      <li><a class="nav-link" href="#honest">Is Honest</a></li>
+      <li><a class="nav-link" href="#long-lasting">Is Long Lasting</a></li>
+      <li><a class="nav-link" href="#down-to-details">Is thorough down to the Details.</a></li>
+      <li>
+        <a class="nav-link" href="#environmentally-friendly">Is Environmentally Friendly</a>
+      </li>
+      <li><a class="nav-link" href="#less-but-better">Involves as little Design as possible.</a></li>
+      <li>
+        <a class="nav-link" href="#conclusion"
+          >Wrap Up</a
+        >
+      </li>
+      <li><a class="nav-link" href="#References">References</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Design">
+      <header>Ux/UI Design</header>
+      <article>
+        <p>
+          Retro post-ironic iPhone fingerstache scenester, single-origin coffee mumblecore hoodie hexagon. Semiotics fam wolf, 90's scenester stumptown knausgaard microdosing pickled vinyl hella brooklyn locavore. YOLO jean shorts gochujang meggings enamel pin ennui. Vexillologist man bun chartreuse, biodiesel cray leggings humblebrag truffaut kitsch twee.
+        </p>
+  
+        <p>
+          Man bun brunch forage keffiyeh scenester XOXO 90's affogato hot chicken offal put a bird on it single-origin coffee sriracha microdosing helvetica. Taiyaki venmo irony af shabby chic roof party pok pok vinyl. IPhone blog taiyaki banh mi, etsy shaman viral gochujang pug neutra literally seitan squid aesthetic. Etsy pickled VHS you probably haven't heard of them subway tile salvia PBR&B live-edge ennui. Taxidermy cronut lyft copper mug scenester af tousled cliche fingerstache chillwave green juice craft beer crucifix street art hashtag. Ramps gentrify pabst flannel hammock kogi raclette 3 wolf moon locavore cloud bread small batch distillery polaroid messenger bag. Portland man bun kitsch, williamsburg wayfarers schlitz hoodie whatever butcher listicle.
+        </p>
+        <ul>
+          <li>
+            Asymmetrical mixtape trust fund cronut small batch man bun. Plaid edison bulb PBR&B, health goth art party fixie lomo +1 vice raclette four loko readymade ethical bushwick distillery. Heirloom XOXO shoreditch, pabst butcher ethical woke photo booth sartorial snackwave umami tousled ennui gastropub. Intelligentsia four loko shoreditch lumbersexual cred vape franzen prism ethical 8-bit. Normcore salvia cold-pressed ennui activated charcoal ugh, polaroid leggings
+          </li>
+          <li>
+            Photo booth lyft pork belly everyday carry 3 wolf moon wayfarers sriracha messenger bag lumbersexual normcore kale chips tattooed vaporware. Before they sold out you probably haven't heard of them bespoke swag forage. Fanny pack bushwick church-key craft beer glossier unicorn locavore food truck ennui mlkshk whatever gastropub. Tumblr chillwave godard taiyaki jean shorts photo booth kitsch viral la croix. Artisan freegan hot chicken sustainable schlitz gastropub cornhole small batch pitchfork. La croix sustainable XOXO skateboard, kickstarter tbh try-hard pork belly hashtag deep v bushwick.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="design-the-design">
+      <header>Design is to design the design of a design.</header>
+      <article>
+        <p>I'm baby palo santo pug tilde, typewriter vape next level distillery biodiesel health goth.</p>
+  
+        <ul>
+          <li>
+            You probably haven't heard of them craft beer microdosing, ethical banh mi letterpress disrupt wolf.
+          </li>
+          <li>Scenester 90's twee four loko trust fund woke try-hard.</li>
+          <li>
+            Meggings ugh humblebrag, pickled meditation cloud bread disrupt edison bulb schlitz. Pour-over vinyl cronut fixie migas.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Innovative">
+      <header>It's Innovative.</header>
+      <article>
+        <p>
+          Chambray tousled locavore austin cronut yuccie. Chicharrones woke pork belly subway tile artisan hexagon freegan hammock portland polaroid narwhal health goth master cleanse crucifix. Semiotics try-hard readymade, asymmetrical tofu leggings hexagon fixie disrupt migas. Tbh marfa typewriter bicycle rights cray single-origin coffee. Hashtag small batch knausgaard YOLO, hoodie squid waistcoat. Blog offal air plant williamsburg skateboard squid.
+        </p>
+  
+        <p>
+          Scenester 90's twee four loko trust fund woke try-hard. Meggings ugh humblebrag, pickled meditation cloud bread disrupt edison bulb schlitz. Pour-over vinyl cronut fixie migas. Slow-carb twee man bun stumptown typewriter listicle church-key franzen narwhal tousled hell of Chambray tousled locavore austin cronut yuccie. Chicharrones woke pork belly subway tile artisan hexagon freegan hammock portland polaroid narwhal health goth master cleanse crucifix.
+        </p>
+        <p>
+          I'm baby palo santo pug tilde, typewriter vape next level distillery biodiesel health goth. You probably haven't heard of them craft beer microdosing, ethical banh mi letterpress disrupt wolf. Scenester 90's twee four loko trust fund woke try-hard. Meggings ugh humblebrag, pickled meditation cloud bread disrupt edison bulb schlitz. Pour-over vinyl cronut fixie migas. Slow-carb twee man bun stumptown typewriter listicle church-key franzen narwhal tousled hell of.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="product-is-useful">
+      <header>Makes a Product Useful</header>
+      <article>
+        Bushwick iPhone bitters chambray. Beard butcher flannel microdosing activated charcoal deep v XOXO palo santo fingerstache kitsch man braid marfa bespoke YOLO. Lumbersexual shaman yr cliche, lyft hashtag subway tile snackwave hoodie edison bulb. Cornhole af food truck, microdosing kombucha yuccie keytar. Tumeric pop-up 3 wolf moon cronut polaroid. Direct trade forage letterpress umami pickled iPhone palo santo meggings brunch pug YOLO vape cornhole twee.
+
+        Pitchfork XOXO VHS kitsch palo santo. Microdosing next level iPhone vexillologist skateboard, mumblecore succulents kinfolk biodiesel flannel. Tumblr pop-up williamsburg blog marfa. La croix YOLO dreamcatcher mixtape keffiyeh activated charcoal, meditation asymmetrical pour-over messenger bag you probably haven't heard of them. Butcher master cleanse adaptogen venmo freegan. Viral banh mi pinterest forage, microdosing glossier roof party live-edge schlitz cardigan scenester ugh chartreuse meggings drinking vinegar.
+
+        3 wolf moon sustainable raw denim +1 synth tumeric enamel pin bushwick unicorn poke marfa. Church-key truffaut literally biodiesel irony unicorn pop-up jianbing flexitarian knausgaard salvia. Drinking vinegar chia kombucha biodiesel cold-pressed gastropub. Pour-over try-hard roof party chillwave chicharrones. Truffaut forage live-edge pok pok, marfa keytar mixtape tilde meditation bitters tousled flannel. Master cleanse lomo iPhone keffiyeh man bun kale chips gochujang tumeric williamsburg shoreditch stumptown polaroid keytar heirloom four dollar toast. Tofu shaman sriracha palo santo semiotics bespoke four loko YOLO iceland echo park poke.
+      </article>
+    </section>
+    <section class="main-section" id="Aesthetic">
+      <header>It's Aesthetic</header>
+      <p>
+        Etsy woke cardigan, palo santo 90's echo park banjo vaporware single-origin coffee hammock crucifix copper mug bicycle rights pickled. Typewriter tofu readymade squid post-ironic subway tile. Offal mustache hell of, kitsch air plant leggings authentic poke brooklyn schlitz deep v flannel polaroid venmo. Master cleanse pinterest literally synth green juice.
+      </p>
+      <p>
+        Readymade direct trade 3 wolf moon fashion axe, squid hot chicken schlitz prism dreamcatcher street art hammock trust fund gastropub brunch. Blog trust fund iceland hoodie tacos vegan man bun VHS scenester tofu tumblr bespoke swag cardigan. Raw denim schlitz man braid church-key. 
+      </p>
+      <p>
+        Chartreuse retro echo park heirloom keytar vegan VHS glossier schlitz shoreditch beard microdosing. Portland meditation enamel pin, aesthetic man bun semiotics wayfarers pour-over viral. Artisan post-ironic man bun palo santo offal.
+      </p>
+    </section>
+    <section class="main-section" id="understandable">
+      <header>Makes a Product Understandable</header>
+      <article>
+        Half and half wings single origin sweet, whipped et single origin chicory mocha flavour qui medium aged as coffee:
+        <p>
+          Brewed est cup single shot pumpkin spice doppio ut french press breve carajillo turkish id aroma. Extraction robust strong, ut pumpkin spice skinny, rich, bar , percolator to go filter est robust steamed.
+        </p>
+        <p>
+          Et iced, strong pumpkin spice as variety, in turkish roast, milk at ristretto and cinnamon, aftertaste mazagran robust mug galão. At, carajillo grounds plunger pot, medium that chicory roast percolator at est, extra  crema single origin foam that.
+        </p>
+        <p>
+          Arabica cultivar est galão dark cup foam to go cup, brewed as turkish in, spoon crema, coffee mazagran, mocha dark macchiato single shot turkish irish.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="unobtrustive">
+      <header>It's Unobtrusive</header>
+      <article>
+        <p>
+          A caffeine, cinnamon that viennese, cortado, roast grounds redeye extraction that eu frappuccino plunger pot, ristretto pumpkin spice aftertaste cinnamon irish. Mocha, aftertaste id, doppio, turkish robusta, aromatic medium sweet grinder macchiato kopi-luwak, grounds cultivar java coffee trifecta aftertaste breve. Rich and americano spoon, galão java fair trade french press, single shot, chicory, as cup bar  aged trifecta. Cappuccino mug rich, strong and ristretto trifecta organic french press trifecta strong at bar  turkish mazagran cinnamon turkish barista bar.
+        </p>
+  
+        <p>
+          Barista aromatic, siphon, at organic, grinder and coffee mocha at, grounds, instant sit, coffee siphon java, sit milk caffeine irish single shot qui arabica. Turkish roast sugar french press, irish, whipped cup sit trifecta, froth sit doppio percolator trifecta skinny lungo froth. Steamed plunger pot shop percolator, viennese carajillo, frappuccino viennese seasonal con panna shop iced medium. Carajillo half and half ristretto decaffeinated, rich, decaffeinated at ristretto java viennese wings, café au lait, black, kopi-luwak beans single shot, extraction breve macchiato frappuccino qui galão extraction. Trifecta macchiato, froth milk percolator irish so frappuccino brewed white irish and siphon.
+        </p>
+        <code>Aged arabica extra , in mocha pumpkin spice, that, caramelization coffee medium grounds sugar est doppio.</code>
+        <p>
+          Body, id, crema, to go breve, crema sugar variety, americano robust seasonal, frappuccino flavour, redeye extra  coffee aged trifecta body single shot trifecta iced dark single shot. 
+        </p>
+  
+        <code
+          >Half and half cortado, coffee frappuccino mazagran beans crema, french press wings ut spoon galão mocha body.</code
+        >
+      </article>
+    </section>
+    <section class="main-section" id="honest">
+      <header>Is Honest</header>
+      <article>
+        <p>
+          French press robusta roast, irish americano at qui, at, sit, acerbic, mazagran coffee grinder, white variety steamed, half and half doppio trifecta turkish americano. Shop percolator whipped, aged bar  cinnamon in doppio, skinny grinder cinnamon, kopi-luwak aromatic caramelization brewed grinder brewed robusta seasonal.
+        </p>
+  
+        <p>
+          Carajillo cup dark aromatic, single shot blue mountain, arabica frappuccino, grounds, extraction, cultivar, aroma body con panna instant flavour kopi-luwak. Foam brewed cinnamon flavour and crema and, blue mountain a espresso, coffee aftertaste and cultivar americano percolator. Aroma, mazagran carajillo organic sugar, chicory arabica doppio acerbic, affogato, a mazagran instant dark affogato.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="long-lasting">
+      <header>Is Long Lasting</header>
+      <article>
+        <p>
+          A cappuccino at qui java in, steamed, caramelization ristretto steamed, trifecta, whipped americano affogato, caramelization crema cream froth latte coffee. French press, percolator mug, organic wings turkish froth sugar frappuccino mug black, arabica breve, wings so con panna cream coffee grounds.
+        </p>
+  
+        <code>Viennese, grounds, cup cultivar, frappuccino, irish</code>
+        <p>
+          Java decaffeinated cinnamon espresso cup sweet siphon coffee carajillo extra , et saucer roast, sweet medium lungo breve roast dark id americano.
+        </p>
+  
+        <p>
+          Foam froth grounds, extra  at filter doppio extra  crema that, galão at macchiato white seasonal cream arabica whipped. Caffeine, shop foam, qui, affogato saucer lungo redeye, percolator filter medium wings whipped affogato ut viennese dripper rich doppio medium aroma. Id and, a id galão as, macchiato, arabica redeye decaffeinated redeye extraction sweet est grounds
+        </p>
+  
+        <p>
+          Id and, a id galão as, macchiato, arabica redeye decaffeinated redeye extraction sweet est grounds. For example:
+        </p>
+  
+        <code
+          >Brewed, pumpkin spice as coffee, dripper coffee, id french press saucer, half and half eu mocha to go qui, siphon blue mountain french press single shot dripper single origin skinny.</code
+        >
+        Trifecta id, kopi-luwak shop, beans, shop milk, spoon cup, carajillo body, sugar arabica extraction saucer froth rich americano.
+        <code
+          >Macchiato white lungo single origin grinder aged, black half and half lungo french press kopi-luwak con panna kopi-luwak mocha americano cinnamon steamed barista macchiato crema siphon. </code
+        >
+      </article>
+    </section>
+    <section class="main-section" id="down-to-details">
+      <header>Is thorough down to the Details.</header>
+      <article>
+        <p>Lorem ipsum dolor sit amet, per te odio dicunt lucilius:</p>
+        <ul>
+          <li>
+            <p>Ei dicant melius expetenda eam:</p>
+            <ul>
+              <li>Per an nusquam instructior, idque assentior per id.</li>
+              <li>
+                Ut salutandi repudiandae sed, principes eloquentiam quo eu, an sea modus dicunt. Vis placerat adolescens mnesarchum eu, numquam fierent qui cu, sed at elit inermis.
+              </li>
+              <li>Cu eam possit utamur disputando. Magna alterum ut sed.</li>
+              <li>Nam et omnis illud instructior, homero epicuri adversarium ne eum.</li>
+              <li>Nec porro concludaturque ut, ex postea vituperata nam.</li>
+              <li>
+                Cu his posse possit, posse dolorem ut eos. Iudico omnesque philosophia in sit, odio consequat ex pro.
+              </li>
+            </ul>
+          </li>
+  
+          <li>Iuvaret detracto</li>
+        </ul>
+        Sadipscing nam te, illum verear admodum ex nam. Id esse atomorum efficiendi usu. Ei nec etiam oblique fabulas, vim eu fastidii definitionem. Ne suscipiantur intellegebat ius, qui velit inani scripserit eu, has in dicat ullum numquam. Mel id discere ancillae. Vim eruditi omnesque sensibus ad, civibus repudiandae duo eu.
+      </article>
+    </section>
+    <section class="main-section" id="environmentally-friendly">
+      <header>Is Environmentally Friendly.</header>
+      <article>
+        Ea nihil veritus efficiantur qui, cum ne meis dicunt convenire. Usu omnis repudiare ne, erat decore similique ei quo. Ad agam inani facete has, vis facilis oportere eu. Vis no partem malorum numquam:
+  
+        <code>Lorem ipsum dolor sit amet</code>
+        Persius convenire te his, cu vim quas eirmod erroribus. Munere quaestio tractatos in duo. Ad cum augue viris, eos no habeo malis. Mea fierent detraxit cu. Doctus nostrum quo te. Quo cu natum veniam, cu eos dico persius.
+        <p>
+          You may also compound the statements using else if to have multiple
+          conditions tested in sequence, as follows:
+        </p>
+        <code
+          >if (Lorem ipsum dolor sit amet) else if (Lorem ipsum dolor sit amet);
+           else if (Lorem ipsum dolor sit amet) (Lorem ipsum dolor sit amet) else (Lorem ipsum dolor sit amet)
+        </code>
+        Consul utroque democritum ne ius. Pertinacia accommodare sed ad, agam falli ei has. Essent debitis ut eam, audire senserit te duo. Omnis inimicus moderatius quo ad, justo constituto te has. Quo id aeque sanctus suscipiantur, cum in cibo graeco blandit, at nec erat tibique facilisis. Eros ocurreret interesset cu vim, his eu inermis partiendo iracundia:
+  
+        <code
+          >if (Quo id aeque sanctus) { Quo id aeque sanctus;
+            Quo id aeque sanctus; } else {
+              Quo id aeque sanctus;
+              Quo id aeque sanctus; }</code
+        >
+        Eos doctus nominati ex, eu viderer volumus vim. Sea nobis legendos electram ei. Dictas everti labores usu id, id quis summo iriure sit. Ut vim dolor tincidunt. Minim inermis theophrastus sed id, est ne iusto prodesset. Laoreet detracto qualisque mea an:
+        <code>if (x = y) { /* statements here */ }</code> Nam nibh tation splendide ut, no quodsi persius consequat sea. Pro te autem congue. Nec ex malis facer audiam. Eos ut diceret detraxit:
+  
+        <code>if ((x = y)) { /* Eos ut diceret detraxit */ }</code>
+      </article>
+    </section>
+    <section class="main-section" id="less-but-better">
+      <header>Involves as little Design as possible.</header>
+      <article>
+        <p>
+          At eam regione detraxit persequeris. Quo scripta nostrum suscipiantur at, munere principes sit ne. An eros consulatu nec, te quo sumo senserit philosophia. Nulla hendrerit eu ius, no eos case fabulas, ei vivendum lobortis expetenda est.
+        </p>
+  
+        <ul>
+          <li>Etiam graeci dolores cum ne.</li>
+          <li>Etiam graeci dolores cum ne.</li>
+          <li>Etiam graeci dolores cum ne.</li>
+        </ul>
+
+      </article>
+    </section>
+    <section class="main-section" id="conclusion">
+      <header>Wrap Up</header>
+      <article>
+        <p>
+          Pri ea erat denique eligendi, ex nam odio quando platonem. Ei nec oblique dignissim necessitatibus, an usu debet omnesque, ea habeo ridens officiis nam. Etiam graeci dolores cum ne. Mei tantas atomorum id, senserit qualisque vim id. Tritani docendi ius ut. Ferri putent ad mea, mei agam definitiones in.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="References">
+      <header>References</header>
+      <article>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+              target="_blank"
+              >MDN</a
+            >
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
+
